@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SimilarMoviesCollectionViewCell" customModule="HungamaAssesment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="143" height="268"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="143" height="268"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9nC-fv-w7N">
+                        <rect key="frame" x="0.0" y="0.0" width="143" height="130"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="130" id="Nax-zq-AIK"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chak De India!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQd-pA-2VO">
+                        <rect key="frame" x="6" y="138" width="131" height="17"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XUV-ax-psO">
+                        <rect key="frame" x="0.0" y="157" width="143" height="111"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play" translatesAutoresizingMaskIntoConstraints="NO" id="1mW-ax-YVd">
+                        <rect key="frame" x="56.5" y="50" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="HR3-Os-uY5"/>
+                            <constraint firstAttribute="height" constant="30" id="Wdp-4X-lEL"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="VQd-pA-2VO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="6" id="14w-KB-FRr"/>
+                <constraint firstAttribute="bottom" secondItem="XUV-ax-psO" secondAttribute="bottom" id="15G-qF-52u"/>
+                <constraint firstItem="1mW-ax-YVd" firstAttribute="centerY" secondItem="9nC-fv-w7N" secondAttribute="centerY" id="1J1-lG-keT"/>
+                <constraint firstAttribute="trailing" secondItem="VQd-pA-2VO" secondAttribute="trailing" constant="6" id="2ki-aY-Vex"/>
+                <constraint firstItem="1mW-ax-YVd" firstAttribute="centerX" secondItem="9nC-fv-w7N" secondAttribute="centerX" id="Avy-YV-X7c"/>
+                <constraint firstItem="VQd-pA-2VO" firstAttribute="top" secondItem="9nC-fv-w7N" secondAttribute="bottom" constant="8" id="KIa-9N-on2"/>
+                <constraint firstItem="XUV-ax-psO" firstAttribute="top" secondItem="VQd-pA-2VO" secondAttribute="bottom" constant="2" id="OMY-DD-ooV"/>
+                <constraint firstAttribute="trailing" secondItem="9nC-fv-w7N" secondAttribute="trailing" id="OaV-3Z-CDL"/>
+                <constraint firstItem="9nC-fv-w7N" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="OeY-P7-bnz"/>
+                <constraint firstAttribute="trailing" secondItem="XUV-ax-psO" secondAttribute="trailing" id="VZp-5W-zir"/>
+                <constraint firstItem="XUV-ax-psO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ZWd-nv-Ime"/>
+                <constraint firstItem="9nC-fv-w7N" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cEj-AN-XmU"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="143" height="268"/>
+            <connections>
+                <outlet property="movieImageView" destination="9nC-fv-w7N" id="h3u-fv-GSh"/>
+                <outlet property="movieNameLabel" destination="VQd-pA-2VO" id="C6a-Gt-ELA"/>
+                <outlet property="playLogoImageView" destination="1mW-ax-YVd" id="Kcp-ff-uNa"/>
+            </connections>
+            <point key="canvasLocation" x="205.07246376811597" y="200.89285714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="play" width="30" height="30"/>
+    </resources>
+</document>

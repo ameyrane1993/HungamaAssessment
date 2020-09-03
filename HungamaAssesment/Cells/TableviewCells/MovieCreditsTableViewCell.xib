@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="272" id="KGk-i7-Jjw" customClass="MovieCreditsTableViewCell" customModule="HungamaAssesment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="384" height="230"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="384" height="230"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="hvy-by-TbI">
+                        <rect key="frame" x="8" y="35.5" width="376" height="180"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="180" id="M95-KK-wFX"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HeU-eP-Zjy">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="KGk-i7-Jjw" id="mJ2-sn-cCa"/>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="pui-Jr-nah"/>
+                        </connections>
+                    </collectionView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credits" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVg-O4-sKM">
+                        <rect key="frame" x="8" y="8" width="368" height="19.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fyp-L4-bZ4">
+                        <rect key="frame" x="0.0" y="223.5" width="384" height="6.5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hvy-by-TbI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="BP8-A1-tna"/>
+                    <constraint firstItem="fyp-L4-bZ4" firstAttribute="top" secondItem="hvy-by-TbI" secondAttribute="bottom" constant="8" id="EP0-de-XGT"/>
+                    <constraint firstItem="fyp-L4-bZ4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="KsM-5w-wL0"/>
+                    <constraint firstItem="hvy-by-TbI" firstAttribute="top" secondItem="ZVg-O4-sKM" secondAttribute="bottom" constant="8" id="OTZ-25-QkE"/>
+                    <constraint firstAttribute="trailing" secondItem="hvy-by-TbI" secondAttribute="trailing" id="R7G-cr-R3Z"/>
+                    <constraint firstItem="ZVg-O4-sKM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Ssj-N7-E7p"/>
+                    <constraint firstItem="hvy-by-TbI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="VeV-mK-g2K"/>
+                    <constraint firstItem="fyp-L4-bZ4" firstAttribute="top" secondItem="ZVg-O4-sKM" secondAttribute="bottom" constant="8" id="XLV-KA-3KC"/>
+                    <constraint firstAttribute="trailing" secondItem="fyp-L4-bZ4" secondAttribute="trailing" id="dbb-SB-Ngp"/>
+                    <constraint firstAttribute="bottom" secondItem="fyp-L4-bZ4" secondAttribute="bottom" id="j6d-RS-cBx"/>
+                    <constraint firstItem="ZVg-O4-sKM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="m9P-pf-IHM"/>
+                    <constraint firstItem="fyp-L4-bZ4" firstAttribute="top" secondItem="hvy-by-TbI" secondAttribute="bottom" constant="8" id="osA-TQ-Yk5"/>
+                    <constraint firstAttribute="trailing" secondItem="ZVg-O4-sKM" secondAttribute="trailing" constant="8" id="rnd-u2-e3t"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="BP8-A1-tna"/>
+                        <exclude reference="EP0-de-XGT"/>
+                        <exclude reference="XLV-KA-3KC"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="creditsCollectionView" destination="hvy-by-TbI" id="955-CB-Jcz"/>
+            </connections>
+            <point key="canvasLocation" x="184.05797101449278" y="204.91071428571428"/>
+        </tableViewCell>
+    </objects>
+</document>
