@@ -8,10 +8,15 @@
 
 import UIKit
 
+protocol PlayVideoTableviewDelegate: class {
+    func playVideoPressed(videoKey: String)
+}
+
 class MovieVideosTableViewCell: UITableViewCell {
 
     @IBOutlet weak var movieVideosCollectionView: UICollectionView!
     
+    var delegate:PlayVideoTableviewDelegate?
     var data: MovieVideoResponse?
     
     override func awakeFromNib() {
@@ -45,6 +50,11 @@ extension MovieVideosTableViewCell : UICollectionViewDelegate, UICollectionViewD
         cell?.movieNameLabel.text = movieData?.name ?? ""
         
         return cell!
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let movieData = data?.movies?[indexPath.row]
+        self.delegate?.playVideoPressed(videoKey: movieData?.key ?? "")
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

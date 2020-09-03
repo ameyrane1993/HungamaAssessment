@@ -124,7 +124,7 @@ extension MovieDetailsViewController: UITableViewDelegate, UITableViewDataSource
             case .videos:
                 let cell = tableView.dequeueReusableCell(withIdentifier: "MovieVideosTableViewCell", for: indexPath) as! MovieVideosTableViewCell
                 cell.selectionStyle = .none
-                
+                cell.delegate = self
                 cell.data = movieDetailsDataArray[indexPath.row].data as? MovieVideoResponse
                 
                 return cell
@@ -167,4 +167,14 @@ extension MovieDetailsViewController: MovieDetailsPresenterDelegate {
         self.movieDetailsDataArray = movieDetailsData
             self.movieDetailsTableView.reloadData()
     }
+}
+
+//MARK:- PlayVideo Delegate
+extension MovieDetailsViewController: PlayVideoTableviewDelegate {
+    func playVideoPressed(videoKey: String) {
+        let webViewController = self.storyboard?.instantiateViewController(withIdentifier: "WebViewController") as! WebViewController
+        webViewController.videoKey = videoKey
+        self.present(webViewController, animated: true, completion: nil)
+    }
+    
 }

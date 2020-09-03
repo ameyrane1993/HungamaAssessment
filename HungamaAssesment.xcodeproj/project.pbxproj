@@ -33,10 +33,6 @@
 		EF6252D52500182E00069BD6 /* MoviePosterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF6252D32500182E00069BD6 /* MoviePosterTableViewCell.xib */; };
 		EF6252D8250018E300069BD6 /* MovieSynopsisTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6252D6250018E300069BD6 /* MovieSynopsisTableViewCell.swift */; };
 		EF6252D9250018E300069BD6 /* MovieSynopsisTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF6252D7250018E300069BD6 /* MovieSynopsisTableViewCell.xib */; };
-		EF6252DC2500199200069BD6 /* MovieReviewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6252DA2500199200069BD6 /* MovieReviewsTableViewCell.swift */; };
-		EF6252DD2500199200069BD6 /* MovieReviewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF6252DB2500199200069BD6 /* MovieReviewsTableViewCell.xib */; };
-		EF6252E025001A5C00069BD6 /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6252DE25001A5C00069BD6 /* ReviewTableViewCell.swift */; };
-		EF6252E125001A5C00069BD6 /* ReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF6252DF25001A5C00069BD6 /* ReviewTableViewCell.xib */; };
 		EF6252E425001AC900069BD6 /* MovieCreditsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6252E225001AC900069BD6 /* MovieCreditsTableViewCell.swift */; };
 		EF6252E525001AC900069BD6 /* MovieCreditsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF6252E325001AC900069BD6 /* MovieCreditsTableViewCell.xib */; };
 		EF6252E825001B7800069BD6 /* SimilarMoviesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6252E625001B7800069BD6 /* SimilarMoviesTableViewCell.swift */; };
@@ -50,8 +46,6 @@
 		EF6252FE25001E1C00069BD6 /* MovieCreditResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6252FB25001E1C00069BD6 /* MovieCreditResponse.swift */; };
 		EF6252FF25001E1C00069BD6 /* Crew.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6252FC25001E1C00069BD6 /* Crew.swift */; };
 		EF62530025001E1C00069BD6 /* Cast.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6252FD25001E1C00069BD6 /* Cast.swift */; };
-		EF62530325001E3300069BD6 /* MovieReviewsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF62530125001E3300069BD6 /* MovieReviewsResponse.swift */; };
-		EF62530425001E3300069BD6 /* MovieReviewResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF62530225001E3300069BD6 /* MovieReviewResults.swift */; };
 		EF62530B25001E4700069BD6 /* MovieSynopsisResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF62530525001E4700069BD6 /* MovieSynopsisResponse.swift */; };
 		EF62530C25001E4700069BD6 /* Spoken_languages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF62530625001E4700069BD6 /* Spoken_languages.swift */; };
 		EF62530D25001E4700069BD6 /* Belongs_to_collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF62530725001E4700069BD6 /* Belongs_to_collection.swift */; };
@@ -59,7 +53,20 @@
 		EF62530F25001E4700069BD6 /* Production_companies.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF62530925001E4700069BD6 /* Production_companies.swift */; };
 		EF62531025001E4700069BD6 /* Production_countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF62530A25001E4700069BD6 /* Production_countries.swift */; };
 		EF62531225001E8C00069BD6 /* MovieDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF62531125001E8C00069BD6 /* MovieDetailsPresenter.swift */; };
+		EF71317925016D440064D0E0 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF71317825016D440064D0E0 /* WebViewController.swift */; };
+		EF71317C2501724C0064D0E0 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF71317B2501724C0064D0E0 /* WebKit.framework */; };
+		EF713184250174920064D0E0 /* HungamaAssesmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF713183250174920064D0E0 /* HungamaAssesmentTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF713186250174920064D0E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF62528C24FFEAB000069BD6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF62529324FFEAB000069BD6;
+			remoteInfo = HungamaAssesment;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		EF4C4F4D250144040060B8AF /* MovieVideoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieVideoResponse.swift; sourceTree = "<group>"; };
@@ -90,10 +97,6 @@
 		EF6252D32500182E00069BD6 /* MoviePosterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoviePosterTableViewCell.xib; sourceTree = "<group>"; };
 		EF6252D6250018E300069BD6 /* MovieSynopsisTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSynopsisTableViewCell.swift; sourceTree = "<group>"; };
 		EF6252D7250018E300069BD6 /* MovieSynopsisTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieSynopsisTableViewCell.xib; sourceTree = "<group>"; };
-		EF6252DA2500199200069BD6 /* MovieReviewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieReviewsTableViewCell.swift; sourceTree = "<group>"; };
-		EF6252DB2500199200069BD6 /* MovieReviewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieReviewsTableViewCell.xib; sourceTree = "<group>"; };
-		EF6252DE25001A5C00069BD6 /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
-		EF6252DF25001A5C00069BD6 /* ReviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewTableViewCell.xib; sourceTree = "<group>"; };
 		EF6252E225001AC900069BD6 /* MovieCreditsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCreditsTableViewCell.swift; sourceTree = "<group>"; };
 		EF6252E325001AC900069BD6 /* MovieCreditsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCreditsTableViewCell.xib; sourceTree = "<group>"; };
 		EF6252E625001B7800069BD6 /* SimilarMoviesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarMoviesTableViewCell.swift; sourceTree = "<group>"; };
@@ -107,8 +110,6 @@
 		EF6252FB25001E1C00069BD6 /* MovieCreditResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCreditResponse.swift; sourceTree = "<group>"; };
 		EF6252FC25001E1C00069BD6 /* Crew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crew.swift; sourceTree = "<group>"; };
 		EF6252FD25001E1C00069BD6 /* Cast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cast.swift; sourceTree = "<group>"; };
-		EF62530125001E3300069BD6 /* MovieReviewsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieReviewsResponse.swift; sourceTree = "<group>"; };
-		EF62530225001E3300069BD6 /* MovieReviewResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieReviewResults.swift; sourceTree = "<group>"; };
 		EF62530525001E4700069BD6 /* MovieSynopsisResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieSynopsisResponse.swift; sourceTree = "<group>"; };
 		EF62530625001E4700069BD6 /* Spoken_languages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spoken_languages.swift; sourceTree = "<group>"; };
 		EF62530725001E4700069BD6 /* Belongs_to_collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Belongs_to_collection.swift; sourceTree = "<group>"; };
@@ -116,10 +117,23 @@
 		EF62530925001E4700069BD6 /* Production_companies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Production_companies.swift; sourceTree = "<group>"; };
 		EF62530A25001E4700069BD6 /* Production_countries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Production_countries.swift; sourceTree = "<group>"; };
 		EF62531125001E8C00069BD6 /* MovieDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsPresenter.swift; sourceTree = "<group>"; };
+		EF71317825016D440064D0E0 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		EF71317B2501724C0064D0E0 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		EF713181250174920064D0E0 /* HungamaAssesmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HungamaAssesmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF713183250174920064D0E0 /* HungamaAssesmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HungamaAssesmentTests.swift; sourceTree = "<group>"; };
+		EF713185250174920064D0E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		EF62529124FFEAB000069BD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF71317C2501724C0064D0E0 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF71317E250174920064D0E0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -142,7 +156,9 @@
 			isa = PBXGroup;
 			children = (
 				EF62529624FFEAB000069BD6 /* HungamaAssesment */,
+				EF713182250174920064D0E0 /* HungamaAssesmentTests */,
 				EF62529524FFEAB000069BD6 /* Products */,
+				EF71317A2501724C0064D0E0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				EF62529424FFEAB000069BD6 /* HungamaAssesment.app */,
+				EF713181250174920064D0E0 /* HungamaAssesmentTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -176,6 +193,7 @@
 			children = (
 				EF62529B24FFEAB000069BD6 /* ViewController.swift */,
 				EF6252D02500143300069BD6 /* MovieDetailsViewController.swift */,
+				EF71317825016D440064D0E0 /* WebViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -205,7 +223,6 @@
 				EF4C4F4C250143BE0060B8AF /* MovieVideoResponse */,
 				EF6252F625001DE400069BD6 /* MovieSimilarResponse */,
 				EF6252F525001DD600069BD6 /* MovieCreditResponse */,
-				EF6252F425001DCB00069BD6 /* MovieReviewsResponse */,
 				EF6252F325001D7600069BD6 /* MovieSynopsisResponse */,
 				EF6252BC2500070400069BD6 /* WebResponseModelClasses */,
 				EF6252B92500007900069BD6 /* MovieDetails */,
@@ -282,10 +299,6 @@
 				EF6252D32500182E00069BD6 /* MoviePosterTableViewCell.xib */,
 				EF6252D6250018E300069BD6 /* MovieSynopsisTableViewCell.swift */,
 				EF6252D7250018E300069BD6 /* MovieSynopsisTableViewCell.xib */,
-				EF6252DA2500199200069BD6 /* MovieReviewsTableViewCell.swift */,
-				EF6252DB2500199200069BD6 /* MovieReviewsTableViewCell.xib */,
-				EF6252DE25001A5C00069BD6 /* ReviewTableViewCell.swift */,
-				EF6252DF25001A5C00069BD6 /* ReviewTableViewCell.xib */,
 				EF6252E225001AC900069BD6 /* MovieCreditsTableViewCell.swift */,
 				EF6252E325001AC900069BD6 /* MovieCreditsTableViewCell.xib */,
 				EF6252E625001B7800069BD6 /* SimilarMoviesTableViewCell.swift */,
@@ -329,15 +342,6 @@
 			path = MovieSynopsisResponse;
 			sourceTree = "<group>";
 		};
-		EF6252F425001DCB00069BD6 /* MovieReviewsResponse */ = {
-			isa = PBXGroup;
-			children = (
-				EF62530225001E3300069BD6 /* MovieReviewResults.swift */,
-				EF62530125001E3300069BD6 /* MovieReviewsResponse.swift */,
-			);
-			path = MovieReviewsResponse;
-			sourceTree = "<group>";
-		};
 		EF6252F525001DD600069BD6 /* MovieCreditResponse */ = {
 			isa = PBXGroup;
 			children = (
@@ -355,6 +359,23 @@
 				EF6252F725001E0100069BD6 /* MovieSimilarResults.swift */,
 			);
 			path = MovieSimilarResponse;
+			sourceTree = "<group>";
+		};
+		EF71317A2501724C0064D0E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF71317B2501724C0064D0E0 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF713182250174920064D0E0 /* HungamaAssesmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF713183250174920064D0E0 /* HungamaAssesmentTests.swift */,
+				EF713185250174920064D0E0 /* Info.plist */,
+			);
+			path = HungamaAssesmentTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,6 +398,24 @@
 			productReference = EF62529424FFEAB000069BD6 /* HungamaAssesment.app */;
 			productType = "com.apple.product-type.application";
 		};
+		EF713180250174920064D0E0 /* HungamaAssesmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF713188250174920064D0E0 /* Build configuration list for PBXNativeTarget "HungamaAssesmentTests" */;
+			buildPhases = (
+				EF71317D250174920064D0E0 /* Sources */,
+				EF71317E250174920064D0E0 /* Frameworks */,
+				EF71317F250174920064D0E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF713187250174920064D0E0 /* PBXTargetDependency */,
+			);
+			name = HungamaAssesmentTests;
+			productName = HungamaAssesmentTests;
+			productReference = EF713181250174920064D0E0 /* HungamaAssesmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -389,6 +428,10 @@
 				TargetAttributes = {
 					EF62529324FFEAB000069BD6 = {
 						CreatedOnToolsVersion = 11.5;
+					};
+					EF713180250174920064D0E0 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = EF62529324FFEAB000069BD6;
 					};
 				};
 			};
@@ -406,6 +449,7 @@
 			projectRoot = "";
 			targets = (
 				EF62529324FFEAB000069BD6 /* HungamaAssesment */,
+				EF713180250174920064D0E0 /* HungamaAssesmentTests */,
 			);
 		};
 /* End PBXProject section */
@@ -425,9 +469,14 @@
 				EF62529F24FFEAB000069BD6 /* Main.storyboard in Resources */,
 				EF6252F225001CCF00069BD6 /* SimilarMoviesCollectionViewCell.xib in Resources */,
 				EF6252EE25001C2100069BD6 /* ArtistCollectionViewCell.xib in Resources */,
-				EF6252E125001A5C00069BD6 /* ReviewTableViewCell.xib in Resources */,
 				EF6252CC25000E5500069BD6 /* MovieListingTableViewCell.xib in Resources */,
-				EF6252DD2500199200069BD6 /* MovieReviewsTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF71317F250174920064D0E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,11 +490,9 @@
 				EF62529C24FFEAB000069BD6 /* ViewController.swift in Sources */,
 				EF62530F25001E4700069BD6 /* Production_companies.swift in Sources */,
 				EF6252B824FFFEE100069BD6 /* APIConstants.swift in Sources */,
-				EF6252DC2500199200069BD6 /* MovieReviewsTableViewCell.swift in Sources */,
 				EF6252F925001E0100069BD6 /* MovieSimilarResults.swift in Sources */,
 				EF62530025001E1C00069BD6 /* Cast.swift in Sources */,
 				EF6252FF25001E1C00069BD6 /* Crew.swift in Sources */,
-				EF62530325001E3300069BD6 /* MovieReviewsResponse.swift in Sources */,
 				EF6252ED25001C2100069BD6 /* ArtistCollectionViewCell.swift in Sources */,
 				EF6252D12500143300069BD6 /* MovieDetailsViewController.swift in Sources */,
 				EF62530C25001E4700069BD6 /* Spoken_languages.swift in Sources */,
@@ -461,16 +508,15 @@
 				EF6252F125001CCF00069BD6 /* SimilarMoviesCollectionViewCell.swift in Sources */,
 				EF6252C32500075800069BD6 /* MovieResults.swift in Sources */,
 				EF6252C12500074600069BD6 /* MovieDates.swift in Sources */,
+				EF71317925016D440064D0E0 /* WebViewController.swift in Sources */,
 				EF6252D8250018E300069BD6 /* MovieSynopsisTableViewCell.swift in Sources */,
 				EF6252E425001AC900069BD6 /* MovieCreditsTableViewCell.swift in Sources */,
 				EF6252B124FFEDAD00069BD6 /* Reachability.swift in Sources */,
-				EF62530425001E3300069BD6 /* MovieReviewResults.swift in Sources */,
 				EF6252CB25000E5500069BD6 /* MovieListingTableViewCell.swift in Sources */,
 				EF62531025001E4700069BD6 /* Production_countries.swift in Sources */,
 				EF62530D25001E4700069BD6 /* Belongs_to_collection.swift in Sources */,
 				EF6252D42500182E00069BD6 /* MoviePosterTableViewCell.swift in Sources */,
 				EF4C4F4E250144040060B8AF /* MovieVideoResponse.swift in Sources */,
-				EF6252E025001A5C00069BD6 /* ReviewTableViewCell.swift in Sources */,
 				EF4C4F5325014C470060B8AF /* MovieVideosTableViewCell.swift in Sources */,
 				EF6252FA25001E0100069BD6 /* MovieSimilarResponse.swift in Sources */,
 				EF6252B524FFF28C00069BD6 /* MovieListPresenter.swift in Sources */,
@@ -480,7 +526,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF71317D250174920064D0E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF713184250174920064D0E0 /* HungamaAssesmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF713187250174920064D0E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF62529324FFEAB000069BD6 /* HungamaAssesment */;
+			targetProxy = EF713186250174920064D0E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EF62529D24FFEAB000069BD6 /* Main.storyboard */ = {
@@ -624,7 +686,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = Y344Y7796A;
 				INFOPLIST_FILE = HungamaAssesment/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -645,7 +707,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = Y344Y7796A;
 				INFOPLIST_FILE = HungamaAssesment/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -655,6 +717,46 @@
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.netcore.SmartechApp";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EF713189250174920064D0E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WW8NLKKR23;
+				INFOPLIST_FILE = HungamaAssesmentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ameysproject.HungamaAssesmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HungamaAssesment.app/HungamaAssesment";
+			};
+			name = Debug;
+		};
+		EF71318A250174920064D0E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WW8NLKKR23;
+				INFOPLIST_FILE = HungamaAssesmentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ameysproject.HungamaAssesmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HungamaAssesment.app/HungamaAssesment";
 			};
 			name = Release;
 		};
@@ -675,6 +777,15 @@
 			buildConfigurations = (
 				EF6252A924FFEAB600069BD6 /* Debug */,
 				EF6252AA24FFEAB600069BD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF713188250174920064D0E0 /* Build configuration list for PBXNativeTarget "HungamaAssesmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF713189250174920064D0E0 /* Debug */,
+				EF71318A250174920064D0E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
